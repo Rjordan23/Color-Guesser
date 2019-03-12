@@ -1,18 +1,39 @@
 body {
   background-color: #232323;
+  margin: 0;
+  font-family: 'Helvetica';
+  font-weight: 400;
 }
 
-span {
-  color: #ffffff;
+#stripe {
+  background-color: #ffffff;
+  height: 30px;
+  text-align: center;
 }
 
 h1 {
   color: #ffffff;
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: center;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
 }
 
 #container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .square {
@@ -20,5 +41,52 @@ h1 {
   background-color: purple;
   padding-bottom: 30%;
   float: left;
-  margin: 1.66%; 
+  margin: 1.66%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: background .3s ease-out;
+  -webkit-transition: background .3s ease-out;
+  -moz-transition: background .3s ease-out;
+  -ms-transition: background .3s ease-out;
+  -o-transition: background .3s ease-out;
+}
+
+.selected {
+  color: #ffffff;
+  background-color: steelblue;
+}
+
+.caution {
+  color: red;
+  font-weight: 600;
+}
+
+.success {
+  color: rgb(0, 184, 0);
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  outline: none;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: steelblue;
 }
